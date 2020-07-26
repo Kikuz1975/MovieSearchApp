@@ -1,0 +1,21 @@
+<h1>Result Page</h1>
+<ul>
+	
+<% data[data1].forEach(function(movie){ %>	
+<br>
+		<li>
+	<strong>
+			<%= movie["Title"]%> 
+			
+			- <%= movie["Year"] %>
+			
+	</strong>
+		</li>
+	<br>
+	
+	<img src="<%= movie["Poster"]%>">
+	<br><br>
+
+<% }) %>
+</ul>
+<a href="/"> <strong>Cercane un altro!</strong></a>
